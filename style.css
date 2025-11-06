@@ -21,13 +21,17 @@
 
 body{
     height: 100vh;
-    background-color: #b97b4b;
-    color: white;
+    background-color: beige;
+    color: #b97b4b;
     font-weight: bold;
     font-family:'Momo Trust Display';
 
 }
-li{
+header{
+  position: relative;
+  padding: 0;
+}
+li{ 
     list-style: none;
 }
 a {
@@ -38,18 +42,15 @@ a {
 a:hover {
 color: orange;
 }
-header{
-    position: relative;
-    padding: 0 2rem;
-}
-
 .Navbar{
     width: 100%;
     height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #b97b4b;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 .Navbar .logo a{
@@ -99,6 +100,7 @@ header{
     overflow: hidden;
     height: 0;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #C9B59C;
 }
 .dropdown_menu li{
     padding: 0.7rem;
@@ -113,7 +115,7 @@ justify-content: center;
 op
 }
 .dropdown_menu.open {
-    height: 240px;
+    height: 180px;
 }
 .home__container{
     padding-block: 3rem 2rem;
@@ -178,7 +180,7 @@ op
     max-width: initial;
     width: 320px; 
     position: absolute;
-    bottom: -2.5rem;
+    bottom: -4.7rem;
 }
 .home__potato-1{
 left: -0.5rem;
@@ -552,69 +554,9 @@ nav {
   display: none;
 }
 
-.footer {
-  background-image: url("assets/footer-bg.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.footer__logo img {
-  max-width: 250px;
-}
 
-.footer__content {
-  margin-top: 2rem;
-  display: grid;
-  gap: 2rem;
-}
 
-.footer__content p {
-  font-weight: 5500;
-  color: var(--white);
-  line-height: 1.75rem;
-}
-
-.footer__links {
-  list-style: none;
-  display: grid;
-  gap: 1rem;
-}
-
-.footer__links li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-weight: 500;
-  color: var(--white);
-}
-
-.footer__links li span {
-  font-size: 1.25rem;
-}
-
-.footer__socials {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer__socials a {
-  font-size: 1.5rem;
-  color: var(--white);
-}
-
-.footer__socials a:hover {
-  color: var(--secondary-color);
-}
-
-.footer__bar {
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--white);
-  text-align: center;
-}
 
 @media (width > 540px) {
   .banner__container {
@@ -745,17 +687,7 @@ nav {
     width: clamp(100px, 20vw, 250px);
   }
 
-  .footer__content {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .footer__links li {
-    justify-content: flex-end;
-  }
-
-  .footer__socials {
-    justify-content: flex-end;
-  }
 }
 
 @media (width > 1024px) {
